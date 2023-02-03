@@ -1,0 +1,29 @@
+Utility class of collection. It is only for collections.
+import java.util.Collection	
+Collection is a utility class here. we call these methods from this class.
+sort(): sorts in a descending order
+Collections.sort(list);
+reverse(): reverse given arrayList.
+Collections.reverse(list2);
+swap(): swaps given indexes at the given array list.  Collections.swap(list3,4,1);
+max(): It returns max number at the given array list.
+min(): It returns max number   at the given array list.
+int min= Collections.min(list3);
+replaceAll():replaces all the matching elements with the new one
+Collections.replaceAll(list4, 1,0);
+frequency(): finds freq of element. it works for all array lists.
+boolean b= Collections.frequency(titles, "QA")==Collections.frequency(titles,"Sdet");
+
+LAMBDA EXPRESSION: we can not use for each method to remove element, because every iteration size and index number will change . that is why we have lambda expression. it is in iterable interface. removeIf function uses iterable implicitly. it can work with any collection type.
+list.removeIf( p ->  p < 5 ); 
+reversed.removeIf(p-> p.length()>=10);
+removeIf(): Whenever you have a condition use this method.
+startsWith():
+list3.removeIf( p ->  p.startsWith("J") );
+
+    String str="aaabbbcccdeeffhggt";
+    //str.split(""); this is a non primitive array
+    ArrayList<String> list= new ArrayList<>(Arrays.asList(str.split("")));// i return array to array list
+    
+    unique.removeIf(p-> Collections.frequency(unique2,p)>1);
+    // removed all elements freq is more than 1. p represents each element of list2 array list
