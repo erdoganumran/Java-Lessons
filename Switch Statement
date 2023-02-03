@@ -1,0 +1,38 @@
+•	Faster than if statement. You can not give any Boolean expression. 
+•	Switch-case statement use for comparing the value of a variable with multiple values and execute some statements based on the match.
+•	Switch statement’s expression must be evaluated to a single value, it can not be long, double, float and Boolean data types.
+•	Case value MUST match with switch data type and UNIQUE/int-int
+
+•	Break: used for exiting the switch.
+•	If we don't give the break statement, switch statement continue to execute the next block(s) until the break statement or } of the switch default block gets executed if none of the case blocks matched.
+•	There can only be one default block or logic we can use it in switch by declaring case blocks back to back. default block can appear anywhere in the code. It doesn't have to be the last one.
+•	No curly brackets for case blocks, even in case of more than 1 statements.
+
+o  	int n = data;	
+o  	Switch (data / expression) {   //body of the switch {}
+o  	Case data/constant1 : (1)//it must have a value and has to be unique everytime. can't be taken by other case blocks. it must match the data type of switch, int=int
+o  	statements ; (sout)
+o  	Break;
+o  	Case data2/constant2 : (2)
+o  	statements ; (sout)
+o  	Break;
+o  	Default: // doesn’t have any value.it must be match with the switch statement. only gets executes if none of the case blocks are matching. you can change default place but if it is not at the end you have to give break;
+o  	statements; (sout)
+o  	break
+o  	}
+
+case 4:
+            case 6://// if you leave the case empty the next step will be executed.
+            case 9:
+            case 11:
+                    result = "30 days";
+            break;// here for case 6,9, 11 it will be 30 for each but print one time
+
+
+
+
+        switch (grade){
+            case 'A': case 'B': case 'C': case 'D': case'E':
+                result = "Passed";
+                break;
+....
