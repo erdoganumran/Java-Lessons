@@ -1,0 +1,40 @@
+PRIMITIVES
+•	double > float > long > int > short > byte
+•	float and doubles are for decimal numbers.
+•	Boolean
+boolean: true/false
+
+Primitive Type Casting
+•	Smaller Primitives can be directly assigned to larger primitive type, larger primitives can NOT be directly assigned to smaller primitives.
+float :100000000.05F
+double :5.5
+
+According to Java primitive data types tutorial , all primitive data types have a default value. 
+So the initialization it's implicit. A good practice: initialize values before using to prevent unexpected behavior.
+
+NON-PRIMITIVES
+•	String
+String name = “ …”;
+or
+String name;
+name = “…”
+
+String Concatenation
+•	Concatenation is linking things together by using “ + “.
+sout (“text” + string or in + “text” + etc.);
+
+•	Array, Classes, Collections, Map Etc.
+
+CASTING
+
+Implicit Casting
+• Casting smaller primitive types to larger primitive types
+• Implicitly done by the compiler
+•	Byte a = 25;  or short x = 1000;
+•	Int b = a;       or   long y = (long) x;
+
+Explicit Casting
+Casting larger primitive types to smaller primitive types
+• Must be done explicitly
+"•	Int a =100;             or long x = 2000;
+•	Byte b = (byte)a;         short y = (short)x"
