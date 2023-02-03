@@ -1,0 +1,25 @@
+• An array of arrays
+• A special variable that’s used as a container of arrays
+• Dimensions of the array can be 2, 3, 4… n dimensions
+• The N dimensional array is a container for (N-1) dimensional arrays
+
+int [][] array2D= new int[3][]; --> 3 is number of one-dimensional arrays
+--> Two sets of brackets indicate two-dimensional arrays
+
+int[Indexes 1D arrays][Indexes of Elements] 
+
+array2D= { {1,2}, {1,2,3}, {1,2,3,4} };
+for (int[] ints : arr2D) {(sout(ints)--> shows every array with a name ints
+               for (int each : ints){sout(each));
+               }-> shows every element with name each
+                                      
+  System.out.println(Arrays.deepToString(arr3D));-->is used for multi-dimensional arrays
+
+  System.out.println(Arrays.toString(arr3D[0][0]))--> is used for one dim. Arrays. I just retrieve just one array.
+
+  sout(arr[number]); --> for just one single element
+
+  int [] i={1,2,3,4};
+  int []b= {5,6,7};
+  int []c={8,9,10,11};
+  int [][] array2D= {i,b,c};
