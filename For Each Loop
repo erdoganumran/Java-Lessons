@@ -1,0 +1,10 @@
+• Used to access each successive value of a data structure
+• There must be a data structure (Array, or Collection or Map) to use for each loop
+• Iteration times and orders are fixed
+• Does not have index numbers
+• for each loop: already iterated,  iteration starts from index 0
+
+for(DataType variableName : dataStructure ){
+//Statement
+ }
+**Data type must match with the successive values of the data structure
