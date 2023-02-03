@@ -1,0 +1,104 @@
+• Declared with static keyword
+• Belongs to the class, and can be called through the class
+• There is only one copy of the static shared for all objects of the class
+• All the Objects of the class shares the same copy
+//instance mean have different copies, static means has same copy
+• Independent things from the object can be created as static.
+• Statics can reach static members, because instances belong to object, static belongs to class. But if you still want to reach an instance in a static method you can create an unassigned object like:
+new Employee().method;
+new ClassName().method;
+• Statics don't have constructors.
+Statics Members
+• Variables-Methods-Blocks-Class
+Static Variables
+• Refer to the common property of all objects
+• It gets memory only once in the class area at the time of class loading
+• A single copy of a class ‘s static variable is shared by all objects of the class
+• If changes are made to static variables, all other instances will see the effect of the change
+    public double radius;
+    public static double pi;
+    public Circle(double radius){
+        this.radius=radius;  //cons is just for instances not  static
+    }
+    static {
+        pi=3.14;
+    }
+Static Methods
+• If we declare any methods as static, it’s known as static methods
+• A method that can be called using class name, without creating objects
+• Objects can also call static methods
+• Static methods only accept static members
+• Static methods can not access instance methods and instance variables directly
+• In static methods we can not use the “this” keyword
+Instance method
+• Instance methods can access instance methods and instance variables directly
+• Instance methods can also access static methods and static variables directly)
+    // if the method is static, i can call method through the class name, i dont have to create an object
+     //but objects has everything that class has. so i can also call statics through the object.
+
+Static Block
+• It’s a set of instructions that is run only once when a class is loaded into memory. used for initializing static variables, gets executed as son as the class is loaded,  runs first before everything, only runs one time if the static variables need several steps to be initialized
+    public static void main(String[] args) {
+        System.out.println(""Main Method"");
+    }
+    static {
+        System.out.println(""Static block"");//only runs one time and first static block will be executed
+    }
+• A static block is also called static initialization block
+Static Imports
+• With the help of import, we are able to access classes and interfaces which are present in any package. But using static import, we can access all the static members (variables and methods) of a class directly without explicitly calling class name
+-->if it is not static, you have to import everything.
+
+static import vs regular import
+		regular import: imports everything from the class
+			import packageName.className;
+			import packageName.*;
+		static import:
+			import static packageName.className.staticMember;  // imports one static member of a class
+			import static packageName.className.*;			 // imports all static members
+Static Class
+public class StaticMembers {//any outer class can not be static but inner class can be. (nested classes)
+    static class class1{//inner class
+      }
+}
+
+" public static boolean isHuman=true;//it is static. All the objects have same value.
+static methods belong to the class,you can call them through the class name.
+
+
+public static boolean hasBattery=true;
+public static void printHasBatter(){// if we have any static method, it should include just static variables
+        System.out.println(hasBattery);
+    }
+
+
+    public void printModelAndPrice(){// if we have any instance method should be instance but instance methodes accepts static variables
+        System.out.println(model+"": ""+ price);
+        System.out.println(OS);
+
+    }
+
+public static ArrayList<Integer> numbers;
+  static {
+        numbers=new ArrayList<>();
+        numbers.add(10);
+        numbers.add(20);}"
+
+
+    static {
+        System.out.println(""Static Block"");
+    }
+    public Constructor_vs_StaticBlock(){
+        System.out.println(""Constructor"");
+    }// if we dont have or create any object, constructor wont be executed
+    public static void main(String[] args) {
+        System.out.println(""Main Method"");
+        new Constructor_vs_StaticBlock();
+    }
+
+
+
+
+public static String schoolName=""Cydeo School"";
+        System.out.println(CydeoStudent.schoolName);
+        System.out.println(c1.schoolName);--> they will print the same thing
