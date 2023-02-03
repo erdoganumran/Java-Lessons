@@ -1,0 +1,22 @@
+•	windows: ctrl + alt + L or help -> find an action -> type "Code format" -> to format the code
+•	ctrl + D pasts with a new line, Ctrl + D ==> duplicate a line
+•	ctrl + Z = undo
+•	ctrl + Y = delete a line
+•	```    code here ``` to send your code in color in Discord
+•	To change the variable name, click on it every variable will be colorful then rename or ctrl + r--> rename
+•	Assignment is working right to left, compiler is working to bottom and left to right.
+•	// is used for short descriptions or comments
+•	/*   …. */ is used for long description or comments
+•	\n: starts a new line
+•	\t: paragraph space(tab) (horizontal tab)
+•	\\: single back slash
+•	\"": double quote"
+• You can exract a method like Refactor--> Extract.
+• Command+d--> duplicate the code
+• to see usages--> navigation-> declaration / ctrl+b 
+• throw an exception--> to terminate the program --> throw new …...;
+• right click on the name or alt+f7-->find usages to see red compile errors
+• menu--code--move down and up to move the code
+• ctrl and space will give constructor suggestions
+
+
