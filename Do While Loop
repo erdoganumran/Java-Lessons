@@ -1,0 +1,9 @@
+• Repeatedly executes same set of statement while condition is true
+• The statement is executed once initially then condition is checked at loop end
+• Code in loop body will execute at least once
+• it starts with a statement, then boolean ex.(condition) comes.
+JUST DO IT
+
+do {//loop body 
+statement(s);}
+while(boolean expression);
