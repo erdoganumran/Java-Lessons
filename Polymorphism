@@ -1,0 +1,69 @@
+Poly + Morphism ( Many Forms)
+• Polymorphism is the ability of the object to take on many forms
+• Polymorphism is when reference type is a parent class/interface and object type is child.
+Animal a= new Dog();//Animal is reference type and compile time, Dog is object type and run time
+a= new Cat(); --> object type is chaged here with the same name and reference type.
+Calling method in polymorphism
+• When we call a method, it will call overridden version from a child class,
+if we have overridden the method.
+• If method is not overridden, it will call parent/super class version.
+• getClass() method helps us to access the object information
+• getClass().getName() : returns package.className of the object
+• getClass().getSimpleName() : returns just the class name of the object
+instanceof
+• instanceof operator can be used to check if the object is certain class.
+Rules
+• Reference type can be parent or interface , object can be any extending
+or implementing child class
+• Reference type decides what is accessible
+Casting (down-casting)
+• Instructs the compiler to change the existing type of an object reference to another type
+Upcasting; casting an object to one of its super types.
+Downcasting; casting an object to one of it sub types.
+
+Arrays with polymorphism
+So it means overriding some methods in every object class by generating.For example, you have an array and you will use for loop for every element. With a method with same name, each object type will call its own method.
+Compile-time polymorphism:
+Method overloading
+Run-time polymorphism: 
+Method overriding. Inside the child class method has a priority for execution.
+
+Comparing Objects: Generate hashCode and equals method to see if they have same value instead of comparing their references.
+
+        Shape sh = new Circle();
+        if (sh instanceof Triangle) {
+            System.out.println(""Triangle"");
+        } else  () {
+            System.out.println(""Circle"");
+        } 
+//instanceof operator can be used to check if the object is certain class.}
+
+Shape[]shapes= new Shape[4];//Object Array
+        shapes[0]= new Square();
+        shapes[1]=new Triangle();
+        shapes[2]=new Circle();
+        shapes[3]=new Shape();
+
+        for (Shape shape : shapes) {//impelementatins   }
+
+        List<Shape> shapes1= new ArrayList<>();
+        shapes1.add(new Circle());
+        shapes1.add(new Triangle());
+
+• Reference type can be parent or interface , object can be any extendingor implementing child class
+• Reference type decides what is accessible
+
+        VoiceCallable obj= new WhatsApp();//Messaging app non-arg constructor. Whatsapp extends Messaging app which has default cons. when run your code you will cons message,
+        //go to VoiceCallable class, search the method. right side must be interface or parent.
+
+        //right side decides where it goes. if you wanna reach left side method you can cast it like down below.
+        ((MessagingApp)obj).launch();// go check VoiceCallable class. there is no launch method there. it is in the messaginApp class also whatsapp has access. you need to cast it.
+        ((WhatsApp)obj).launch();
+
+VoiceCallable.decline();//decline is static. so you can call it through class name.
+        ((MessagingApp) obj).sendMessage(""thanks..."");
+
+
+Foo f = new Bar();// Foo is class in compile time, Bar is child in runtime
+            f.instanceMethod();//instanceMethod() in Bar because Bar created in run time
+
