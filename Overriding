@@ -1,0 +1,20 @@
+Overriding Superclass Methods
+• Sometimes a subclass inherits a method from its superclass, but the
+method is inadequate for the subclass’s purpose. Because the subclass
+is more specialized than the superclass, it is sometimes necessary for
+the subclass to replace inadequate superclass methods with more
+suitable ones. This is know overriding.
+Method Overriding Rules
+1. There must be is-a relationship(inheritance)
+2. The method must have the same name as in the parent class
+3. The method must have the same parameter as in the parent class
+4. Access modifier: Needs to be same or more visible
+• public - > public
+• protected - > protected, public
+• default - > default, protected, public
+5. Return type:
+• must be same or
+• covariant type (same class type or sub class type)
+ 
+@override -->  this is a notation means we don’t want use the method on the class, we want use the method we overrided.
+
