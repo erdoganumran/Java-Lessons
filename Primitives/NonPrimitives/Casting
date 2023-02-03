@@ -19,6 +19,10 @@ or
 String name;
 name = “…”
 
+String Concatenation
+•	Concatenation is linking things together by using “ + “.
+sout (“text” + string or in + “text” + etc.);
+
 •	Array, Classes, Collections, Map Etc.
 
 CASTING
