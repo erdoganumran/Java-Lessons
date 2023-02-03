@@ -53,15 +53,32 @@ isEmpty(): shows if string is empty like "";
 isBlank(): shows if string is not empty but has white spaces "              "
 startsWith("word");
 endsWith("word");
+toCharArray(); returns a char array
+		"abc".toCharArray() ====> {'a', 'b', 'c'}
+split(value): returns String array
+		"I love learning java programming language".split("  ") ===> {"I", "love", "learning" ,"java", "programming" ....}
+		"ABC".split("")  ===>  {"A", "B", "C"}
+
+		String email= "abc@gmail.com";
+		String[] sp= email.split("@");// if you split it by . (dot) it has to be given with the double slash \\.
 
 //Every character in string has an index number. index numbers start from 0
-
 //char tenth = word.charAt(9);
 
-int totalCharacters = s1.length();// it will start count from 1
+		int totalCharacters = s1.length();// it will start count from 1
 
-char lastChar2 = s1.charAt(s1.length()-1)--> shows last char
+		char lastChar2 = s1.charAt(s1.length()-1)--> shows last char
 
-String word= "Cydeo School";
-        String brand= word.substring(0, 4+1);// it will stop at the before ending index
-        System.out.println(brand);//Cydeo
+		String word= "Cydeo School";
+		String brand= word.substring(0, 4+1);// it will stop at the before ending index
+		System.out.println(brand);//Cydeo
+		
+		String sentence = "I Love Java";
+		String []words= sentence.split(" ");=={"I", "Love","Java";}
+		
+		String []a={"umran", "gulle"};
+		int in=0;
+		for (String each:a){
+		c[in++]=each;
+ 		//or in++ you also can write like this
+		}
