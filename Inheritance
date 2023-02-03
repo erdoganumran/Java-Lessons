@@ -1,0 +1,96 @@
+Inheritance (Is A relation)
+• Used for creating an “is a” relationship among the classes
+• When an “is-a” relationship exists between objects, it means that the specialized
+object has all of the characteristics of the general object.
+• It allows one class to inherit the features (variables & methods) of an another class
+Syntax:
+The keyword used for inheritance is extends
+public class Cat extends Animal{}
+Animal is called SUPER class and Dog is called SUB class
+OR
+Animal is called PARENT class and Dog is called CHILD class
+Super & Sub Classes (Is A relation)
+• Super Class: The class whose features are inherited is known as super class (or a base class or a parent class)
+• Sub Class: The class that inherits the other class is known as sub class(derived class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
+What is inherited to sub class?
+• All the accessible variables & methods (depending on the access modifier)
+• Private variables and methods are not inherited.
+• Constructors are not inherited, but child class must call one of parent class’ constructor
+Calling the Super Class Constructor
+• If parent class has default constructor, sub class calls it implicitly, otherwise super class’ constructor need to be called explicitly in the sub class
+• The super keyword refers to an object’s super class. We can use the super
+key word to call a superclass constructor.cons name should be same with the class name.
+
+Super keyword
+• super() is used to call Parent class constructor from Child class constructor
+• If parent class has default (No-Argument) constructor, compiler will put super()
+automatically
+• If parent class only has constructor with parameters, then child constructor MUST
+make a matching super(params) call
+• Super with variables (super.variable)
+• Super with methods (super.method)
+• Super with constructors (super() )
+super()
+• super() is used to call Parent class constructor from Child class constructor.
+• Parameters must match with parent constructor
+• It needs to be the first statement in the child class constructor
+• this() also needs to be the first statement in the constructor, so super() and this() can not be in the same constructor
+• If you do not add super() in your constructor, compiler will put one for you
+• If parent class only has constructor with parameters, then child constructor MUST make a matching super(params) call.
+Types of Inheritance
+• Single Inheritance: Sub classes inherit the features of one super class
+• Hierarchical Inheritance: Once class serves as superclass for more than one sub class
+• Multi Level Inheritance: Subclass will be inheriting a Super Class and as well as the
+subclass also act as the Super Class to the other class
+• Multiple Inheritance: Java DOES NOT support multiple inheritance with classes. One
+class can not have more than one superclass and inherit features from all parent class
+
+
+    textBox.hashCode());// will give a hash code, which is calculated based on address of this object in memory.address goes through a function called a hash function and function get a value and map it to a numeric value which we call hash
+    //and we hash code comparing object for equality.
+    to make this, override hashCode method.
+
+    var obj=new Object();// this object class which is already defined in Java is available from anywhere of Java and has many member as you see below
+
+
+    import vs extends:
+		import: borrowing
+		extends: owning
+
+
+	inherit ->pass it through
+	import -> let using
+  
+      public void setAge(int age) {
+        if(age<5 || age>90){
+            return;// if it is not true it will give 0, null , or you can add error message
+        }
+        this.age = age;
+    }
+
+    public void setGender(char gender) {
+        if(!(gender=='M' || gender=='F')){
+            System.err.println(""Gender should be F or M"");
+            System.exit(0);
+        }
+        this.gender = gender;
+    }
+
+
+class A{
+
+    public A(int a){
+        System.out.println(""A"");
+    }
+}
+class B extends A{
+    public B(){
+        super(9);// If parent class parameter is not default you have to call super class by super keyword and pass the argument
+        System.out.println(""B"");
+    }
+
+
+
+
+
+
