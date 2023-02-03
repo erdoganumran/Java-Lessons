@@ -1,0 +1,73 @@
+Custom classes are meant to be create objects. we dont need main method.
+Class:
+• Where Objects came from
+• Class is a collection of similar objects
+Class is conceptual (is a template)
+• An entity that determines how an object will behave and what the object will contain
+• A blueprint or set of instruction to build a specific type of Object
+Object
+• Instance of a class, real
+• An object can store data
+• The data stored in an object are called fields
+• Multiple objects can be created from a class
+Instance Variables
+• Declared inside the class and outside any methods/blocks
+• Belongs to the object, and each object has its own memory
+• Each Object has a separate copy of the instance variable
+local variables are declared in method, instance variables are declare outside the method.
+Instance Methods
+• Does not have static keyword
+• Belongs to the object, ecah object has its own variable. that is why functions are not static.
+• Each Object has a separate copy of the instance methods
+Creating an Object/Instance
+The new keyword is used to create an instance of a class
+  Dog dog1= new Dog();
+ClassName ObjectName= keyword Consructor();
+
+Accessing an object’s Data and Methods
+An Object’s members refer to it’s data fields and methods. After object is created its data can be accessed and its methods can be invoked using the dot operator (.)
+  objectName.attributes=variable;
+  dog2.name=""Ace"";
+  "Class Name-- public class Car {}
+public: access modifier, always acccessable.
+every single java file can have just one public class
+your file name and public class name has to match
+Fields(Attributes, instance variables)--
+AccessModifier DataType DataName;
+public String brand;
+Methods(Actions)--
+If it is static, it means every objects has same copy. but if it is instance, , each objects will have different copy. doesnt have static keyword.
+AccessModifier ReturnType MethodName(parameters){//function}
+public void drive(){
+        System.out.println(""Driving "" + brand+ "" ""+ model);
+    }
+toString: is needed for every class in order to print the object. if you dont have string method you will get hashcode.it will convert custom class object to string
+public String toString() {
+
+setInfo: public void setInfo(String carBrand){brand=carBrand;}
+if you don't have this setInfo method, in the main method you have to call instance objects them one by one
+
+Constructor: constructor gets executes when you create an object from class.
+
+Creating an object:
+Car car1= new Car();
+Calling a method:
+car1.setInfo();
+
+ Student st4= new Student();
+        st4.setInfo("Dilara",'F', 27, "202227TR", 'B');
+        Student st5= new Student();
+        st5.setInfo("Yasemin",'F', 36, "202236TR", 'A');
+
+        Student[] students={st4, st5};
+
+        ArrayList<Student > earlyBirds=new ArrayList<>();//gradeA
+        ArrayList<Student > angryBirds=new ArrayList<>();
+
+        for (Student each : students) {
+            System.out.println(each.name);
+            if(each.grade=='A'){
+               earlyBirds.add(each);
+            }else {angryBirds.add(each);}
+        }
+
