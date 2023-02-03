@@ -1,0 +1,32 @@
+Garbage Collection: Collection of unreferenced objects
+Garbage Collector: responsible for collecting the unreferenced objects from java heap. and destroys it ( finalize())
+• JVM periodically runs a process known as the garbage collector, which
+removes unreferenced objects from memory
+• It is automatically done by the garbage collector (a part of JVM)
+How can an object be unreferenced?
+• By nulling the reference
+• By assigning a reference to another
+
+Unreferenced objects:
+1. null keyword:
+  String str = ""Java"";
+  str = null;
+
+Dog dog1=new Dog();//dog1 is reference name
+        dog1.name=""Lucy"";
+        dog1= new Dog();-->I don't have any reference name here it is eligible for garbage collection.
+
+2. creating a new object
+  String str = ""Java"";
+  str = ""Python"";
+  
+        ArrayList<Integer>list1=new ArrayList<>();
+        list1.add(100);
+        ArrayList<Integer>list2=list1;//they are pointing the same object, so they will have same elements.
+        list2.add(200);
+        list2.add(300);
+
+        System.out.println(list1);
+        System.out.println(list2);
+        System.out.println(list1==list2);
+
