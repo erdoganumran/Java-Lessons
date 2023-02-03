@@ -1,0 +1,10 @@
+Source code -> Java C Compiler   -> Byte Code (.class file)   -> JVM (Loader    -> Byte Code Verifier   -> Execution  -> Final Output
+
+•	JVM= Java Virtual Machine is system library provides the resources.
+•	JRE = Java Runtime Environment is development environment.
+•	JDK = Java Development Kit is responsible running java codes.
+•	Javac = Java Compiler translates.
+
+Integrated development environment (IDE) is a software application that provides
+Comprehensive facilities to computer programmers for software development with just one click. 
+No need Javac, JVM. Because IntelliJ , Visual Studio, Net Beans etc. are designed for Java.
