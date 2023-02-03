@@ -1,0 +1,9 @@
+Break Statement: exits the loop & switch. Tells the interpreter to go onto the next statement of code outside of the loop. After break; jumps out of the loop, no matter how many cycles are left, loop is exited.
+Continue Statement: Skips the current iteration of the loop and jumps to the next iteration.
+
+Loop{statement1;
+statement2;
+break; || continue;
+statement3;
+
+System.exit(0);
