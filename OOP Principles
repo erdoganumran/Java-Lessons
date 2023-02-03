@@ -1,0 +1,19 @@
+There are 4 Object Oriented Programming (OOP) principles:
+• Encapsulation
+• Inheritance
+• Abstraction: for reducing complexity by hiding unnecessary deatils
+• Polymorphism
+OOP: A design pattern of the applications in an organized and modular way
+
+Coupling: Any changes in a class can affect many classes which are couplinh. We should reduce coupling to increase independency for not impacting so much.
+
+Object Class
+• The Java API has a class named Object, which all other classes directly
+or indirectly inherit from.Methods of object class;
+equals
+finalize
+wait
+getClass
+toString
+Creating an object from object class;
+var x= new Var();
