@@ -1,0 +1,63 @@
+• A special method that every class must have.
+• Constructor is an instance for each object, if you don't have constructor, compiler will give default constructor.
+• It’s used when we create objects of a class.
+• We can use constructors to initialize the object’s instance variables.
+• Execution of a constructor always depends on the object.
+Creating Constructors
+Constructor is a special method that matches the name of the class and has no return type nor a specifier.
+Types of Constructors: No-Argument
+• A constructor that has no parameter.
+• Also known as default constructor.
+• If we do not define constructor is a class, then compiler creates default constructor
+• If base class has default constructor child class won't give any error but with argument will give error in child class and you must override it.
+Types of Constructors: Parameterized
+A constructor that has parameters.
+• If we want to initialize the fields (instance variables) of the class with our own values, then we pass parameters to the constructor
+Constructor Overloading
+• We can have multiple constructors in a class by implementing method overloading. if we have multiple constuctor it means we have multiple options to creat an object.
+• You can write some code fragments inside the constuctor. for instance;
+NumberOfEmployee++;
+which is independent from the objects. With every created object number will increase.
+• You write set method for constructor with exception throwing.
+• cons inside a cons; this(cons);
+
+Syntax:
+AccessModifier  ClassName(ParameterType ParameterName){//has to be same with the class name
+this.fieldName=ParameterName;
+		}
+
+this: refers to the instances
+this. : to call instance variables & instance methods
+this() : used for calling the constructors
+
+objectName.fieldName=""xyz"";
+objectName.method();
+
+
+return; exits the method.
+you can create ArrayList with all objects and manipule all of the fields how you want.
+if you don't have constructor, you have to call instance variables one by one to create objects. --> obj1.name=""xyz""; obj1.salary=10000; 
+so it makes easier creating objects with all the fields.
+
+//ctrl and space will give constructor suggestions
+
+"You can create several constructor like the example below;
+public Car(String brand){
+        this.brand=brand;
+    }
+    public Car(String brand,String model){
+        this(brand);// you call the constructor above in this line
+        this.model=model;
+    }
+    public Car(String brand,String model, int year){
+        this(brand, model);// you call the constructor above in this line
+        this.year=year;
+    }
+
+
+public double calcCast(){
+        double cost= (isPersian)? (width*length)*unitPrice+200: (width*length)*unitPrice;
+        return cost;
+    }
+main method{System.out.println(object2.calcCast());}--> it will bring the cost of carpet"
+
