@@ -1,0 +1,51 @@
+• Part of Collection Interface or data structure. Internally uses the array.
+•Allows us to store objects
+• Presented in “java.util” package. it is a class.
+• it is already have toString method so it's not mandatory to use it ot at printing etc. but array doesn't have it.
+• Size is automatically adjusted (has add and remove functions, so dynamic)
+• Does not support primitives
+• Doesn't support multi dimensinal arrays
+
+collection and array is a data structure to store data. 
+We have ArraysClass for arrayLists, fCollections Class or collection  which are utility class that have some methods.
+
+import java.util.ArrayList:
+ArrayList<DataType(primitives are not allowed)> name= new Arraylist <DataType(optional) > ();
+
+ArrayList<String> list = new ArrayList<>();
+list.add("Umran");
+list.addAll(Arrays.asList("Eren","Adam"));
+
+ArrayList<String > names= new ArrayList<>(Arrays.asList("Ahmet", "Ali", "Umran");
+
+METHODS
+add(Data): adds the data after the last index of the ArrayList
+numbers.add(10);
+add(index, Data): inserts the data at the given index
+numbers.add(2,25);
+size(): returns the total number of elements
+get(index): returns the element at the given index
+int num= numbers.get(3);//inboxing
+set(index,  Data): replaces the element at given index with the new element.returns the element which you updated
+list.set(2, ""JavaScript""); 
+remove(int index): removes the element at the given index
+remove(Object): removes the given object from arraylist, returns boolean
+employees.remove( employees.size() -1 )-->removes last element here
+boolean r1 = employees.remove(""Hulya"");-->deletes this element, if we don't this element it will be false
+clear(): remove all the elements of the arraylist, size will be 0
+list.clear();// it will clear all the array
+indexOf(Data): returns the first matching element's index number, returns int
+lastIndexOf(Data): returns the last matching element's index number, returns int. if it is not exist you will get -1.
+elementsList.indexOf(""NewYork"");
+contains(Data): returns true if the element is contained in the arraylist, otherwise returns false
+boolean bL= list.contains('A');//TRUE or FALSE
+equals(ArrayList): returns true if two arraylists are equal (same elements in same order), otherwise returns false
+if(array[i].equals(oldElement)){array[i]=newElement;}
+isEmpty():it returns us a boolean to check if the array size is zero or not.
+
+Converting  array to array list:
+String[] countries={"Germany","Turkey", "Australia" };
+ArrayList<String> reversed= new ArrayList<>(Arrays.asList(countries));
+
+Converting  arrayList to array:
+countries= reversed.toArray(new String[0]);// this zero is not important you can give any number. it will take reversed arrayList size as size.
