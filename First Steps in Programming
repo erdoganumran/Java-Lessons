@@ -1,0 +1,27 @@
+MAIN METHOD: makes your code runnable and every java app must contain  a main method.
+public static void main(String []) {
+sout;
+}
+or 
+type "main" + Enter
+
+Println(); 
+•	Displays a message on the screen,
+•	Appends a newline at the end of the data output,
+System.out.println(“…”);   
+or                       
+type "soutv" + Enter
+System.err.println(); -> used for printing error messages (red color)
+
+Print(); 
+•	Used for printing data on the console
+•	Does not append a newline at the end of the data output
+System.out.println(“…”);              
+or                       
+type "sout" + Enter
+
+Variables:
+•	Reusable data. Variables must be declared before use.
+•	You can use just _ and & for special characters and add digits after character
+•	double > float > long > int > short > byte
+Data Type Variable Name = “Data” or data;
