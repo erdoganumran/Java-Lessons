@@ -1,0 +1,69 @@
+Outer and Inner If statements can be any type of if statement (Single if, If…else and Multi-branch If)
+
+•	Single if can be used creating condition for 1 possible output
+If (condition) {statements}
+
+•	If … else statement If it resolves to true the first code block is executed. when there are only two option/possibilities ( not more not less than 2 condition)
+
+•	Multi- branch If Statement It is used to make decision among several alternatives. when there are three or more option/possibilities. ONLY one block gets executed.
+
+•	Nested-If Statement Nested if statements can be used for creating a pre-condition. It’s used if one condition can beevaluated to several alternatives."
+
+"o	If (condition) {statements}
+Else {statements}
+
+o	Boolean ( logical statement) = true / false
+If Boolean { sout;}
+Else {sout ;}
+
+o	If (condition 1) {statements}
+Else if (condition 2) {statements}
+Else {statements}
+
+o	If (condition) {
+if (condition) {statements}
+else {}
+}
+Else {}
+
+If Statement without Curly Braces    
+•	If there is just one statement in the block so we don't have to use {}
+•	If we have more one statement, we have to use {} but the best way is including the {}
+
+Ternaries 
+Short is version of if statement. If all the data type is same you can use ternaries.
+•	If (condition)  : (condition)?
+•	Else=    :
+•	Else if (condition)=      :(condition)?
+
+o	String name = (condition)?”even”:”odd”;
+o	Sout(name);
+o	Sout((condition)?”Even”;”odd”);
+
+o	String name = “”; -> Temporary value.
+o	String name; -> variable is not initialized here. Before using it you must initialize it.
+o	Boolean name = (logical statement || && logical statement);
+o	If (Boolean name // true) string name = “…..” 
+o	else if (…condition) string name = “…”
+o	Sout (string name)
+
+o	String name = (condition)? “string name” 
+o	:  () ? “string name” 
+o	: “string name”;
+o	Sout (name)
+
+o	Double name = 0;     -> temporary value
+o	If (condition) {name = formula // will be assign to the temporary value } else if …
+
+o	Int a = 30;
+o	String b = “”; // temporary assigned data will be empty
+o	If (logical statement) 
+o	{b = “…” ;} // permanent statement
+o	Else 
+o	{ b = “…”;} // permanent statement
+o	Sout ( “ b” ;)
+ 	
+
+//we don’t need to use ; after condition
+
+
