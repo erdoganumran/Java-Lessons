@@ -1,0 +1,58 @@
+• It’s a function. method=function
+• Grouping a series of code fragments to perform a task
+• Allows us to reuse the function rather than repeating same set of statements
+
+* access modifier-specifier-returnType-methodName(Parameter){}==public static void main(String[] args){}--> this is how we declare a method. 
+method: grouping code fragments ===> creating a function
+advantage: improves the re-usability of our codes.
+return-type and code fragments are must specifiers.
+*you can switch specifier-access modifier
+
+
+-->ctrl + come over method  with your mouse. it will be blue that method and click it takes you where your method is.
+
+
+  public static void age(int number){
+  }age is an method which has some code fragments
+
+  public static void main(String[] args) {
+  age(1988);//1988 is argument here. this argument will be assigned to the perimeter
+  }
+
+• Access Modifier: determines the visibility, public is open to the world and always accessible.
+//access modifiers: public, protected, default, private
+public: ALWAYS ACCESSIBLE
+• Specifiers: Allows us to call the method through the class name.
+//specifiers: static, final, abstract, synchronized
+static: method can be called through its class name
+• Return Type: determines if the method returns a value. If return type is void, method does not return any value.
+//return type: void, any DataType(string, int, or any other custom data type)
+void: does not return a value.void means I don't want to return anything, does not return any spesific data. it just performs the function. void means, if you have any data within the method, you can not use this data outside of the method.
+any dataType: MUST return a value
+• Method Name: Descriptive name of the function, The same rules that apply to variable names also apply to method names.
+//method name can be anything but make sure that it is meaningful and descriptive
+• Parenthesis: method name is always followed by a set of parenthesis, can be capable of receiving arguments.
+//if it is  void you don't have to have parameters inside the arg parenthesis
+//parameter: any data type. additional info. without this info method won't complete its function.
+*if it is giving compiler error, it means the method demand additional info to complete its task
+(String[] args)-> this is an argument.
+
+
+public static int maxNumber(int [] nums){
+int max=40;
+return max;}
+
+public static void main(String[] args) {
+ int [] nums={1,2,3,4,3,2,5,6,4};
+ int maximum= maxNumber(nums);// it is reusable anymore
+ sout(maximum);
+
+String str=""hello"";
+for (char each:str.toCharArray()){
+  if (each==ch)
+  count++;}}==>will calculate frequency of each ch of a string
+
+int [] array= {1, 2, 3, 4, 5};
+array= addInteger={1,2,3,4,5,6,7);==>you are creatig a new array here by assigning
+
+int max=maxNumber(new int[]{4,6,8,4,40,7,30}==>maxNumber is method and int[] is a argument for this method. 
