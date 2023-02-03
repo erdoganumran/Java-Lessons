@@ -1,0 +1,6 @@
+• Repeated If Statement
+• Condition is checked at loop start
+• Loop gets terminated when condition is evaluated to false
+
+While (number<=5// this is boolean expression)
+{sout(); number++//this is a statement, if boolean is true, statement  will get executed.}
