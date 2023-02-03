@@ -1,0 +1,67 @@
+Presented in "java.lang" package. 
+Any class in "java.lang" package can be imported implicitly
+•	String literal: String str =”Cydeo”;
+•	By new keyword = String str2:= new String(“Cydeo”);
+
+
+new different object will be created in the heap
+
+1. Object. 2 ways we can create objects:
+	1. String literal:	String str1 = "Cydeo";
+    String s =  "Cydeo";    str1 == s ==> true
+    all the string literals will be stored in string pool
+2. by new keyword:  String str2 = new String("Cydeo");   str2 == str1 ==> false
+    String str3 = new String("Cydeo");   str2 == str3 ==> false
+            
+STRING POOL
+Java Heap is memory. The objects are being stored in the heap. Heap is memory location.
+Special object are stored in String pool in heap. Consumes the memory.
+
+Local variables don’t take a place store in the stack.
+
+All the string objects are called String literal. All the string literal are stored in String Pool. 
+
+STRING METHODS
+String is immutable, Once the object is created it can’t be Modified.
+There are two ways to create String object:
+1. Created by using double quotes. All the string literals will be stored in string pool. 
+    String str = "Hello";// 
+2. Creates new different object in the heap. new different object will be created in the heap.
+String str2 = new String ("Hello);
+    str == str2;/false 
+
+charAt(index): It is going to return you the character(letter) at the given index, returns char// give number between the phar.
+length(); returns total number of characters to integer variable. returns int.
+trim(): returns new String without the white spaces (unused spaces)
+indexOf("str"): returns the index number of first occurred character. returns int. 'letter' shows the remaining part of the number of the text. Give spesific string.
+lastIndexOf(str): returns the index number of last occurred character. returns int
+Substring(beginningIndex , endingIndex)//creates substring starting from the given beginning index till the given edning index (ending index is excluded)
+    String str ="Cydeo School";
+  str.substring(0,  4+1) ==> Cydeo
+substring(beginningIndex): creates substring starting from the given beginning index till the end of the string
+   String str = "Cydeo School";
+repeat(how many times); prints the value given times
+replace("old one", "new one");//returns new string by replacing All the old values with the given new value.
+replaceFirst(old one, new one); just will replace first word//returns new string by repalcing  the FIRST matchingold values with the given new value.
+toUppperCase();//returns new String in the upper case version of old string object
+toLowerCase(); //in  order to ignore case sensitivity we can use lowercase or uppercase version of string. this is only way if we have upper and lover case
+equals();    // s1.equals(s2) --> true/false checks if two strings have same text, returns boolean
+equalsIgnoreCase(string);
+contains("word") : shows if contains the word. always accept srting. if it is char, we can use it "" + charAt(i) like that.
+    str2.contains("" + str.charAt(i))==>returns boolean
+isEmpty(): shows if string is empty like "";
+isBlank(): shows if string is not empty but has white spaces "              "
+startsWith("word");
+endsWith("word");
+
+//Every character in string has an index number. index numbers start from 0
+
+//char tenth = word.charAt(9);
+
+int totalCharacters = s1.length();// it will start count from 1
+
+char lastChar2 = s1.charAt(s1.length()-1)--> shows last char
+
+String word= "Cydeo School";
+        String brand= word.substring(0, 4+1);// it will stop at the before ending index
+        System.out.println(brand);//Cydeo
