@@ -1,0 +1,42 @@
+• Loops check a condition. If Condition returns true, a code block will run. The condition will be checked again. It repeats until condition returns false.
+There are 3 types of Loop;
+1.Foor Loop
+2.While Loop
+3.Do While
+• For Loop,runs the given code a specific number of times. Initialization is the starting point of the loop. Condition is the ending point of the loop, when it evaluates to false, loops stops running. Iterator is responsible for making the condition false. The Iteration gets executed after each iteration through the loop.
+1. The first time the loop is run, the variable is assigned by a value.
+2. Every time the loop is run, condition is checked
+3. Then the code inside loop (between curly brackets) gets executed
+4. When the statements in curly braces have finished, the iteration gets executed.
+
+for(initialization; condition; iteration) {
+//statements - code here gets executes then it will go iteration from the code
+}
+
+***for (char a = 65; a <= 90; a += 1) // after 90 it will be terminated
+            System.out.print(a + " ");// A B C …
+
+*** for (int b = 97; b <= 122; b++)
+            System.out.print((char) b + " ");// a b c
+
+for (int i = 0; i < 5; i++) {
+            System.out.println("Enter a number");
+            total+=scan.nextInt();//it will ask 5 times
+           digits+= str.charAt(i);
+        }
+
+String str2 = "" + str.charAt(i);//turns into string data type if it char
+
+
+  	for(int i = 1; i <= 3; i++){
+
+    		if(valid){
+    			sout("Loged In")
+    			break;
+    		}
+
+    		if( i==3){
+    			sout(Your account is locked)
+    		}
+
+    	}
