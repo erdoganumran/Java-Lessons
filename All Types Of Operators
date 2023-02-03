@@ -1,0 +1,56 @@
+Arithmetic Operators
+Addition +
+Subtraction –
+Division /
+Multiplication *
+Modulus %
+
+Unary Operators
+•	++: increase the value by 1.
+•	--: decreases the value by 1.
+Unary Plus Operator + Indicates positive value
+Unary Minus Operator - Negates an expression or value
+Increment Operator ++ Increments a value by 1
+Decrement Operator -- Decrements a value by 1
+Int a =25;
+Sout (++a); = 26
+Sout (--a); = 24
+
+Pre Increment/Decrement:changes the value immediately
+Post Increment/Decrement: Increment/decrement operators are placed after the operand. changes the value in the second step.
+"Int a =25;
+Sout (a++); = 25
+Sout (a--); = 26"
+
+Shorthand Operators
+Assignment x = y      x = y
+Addition Assignment x += y       x = x + y
+Subtraction Assignment x -= y       x = x – y
+Multiplication Assignment x *= y       x = x * y
+Division Assignment x /= y       x = x / y
+Remainder Assignment x %= y       x = x % y
+
+Relational Operators
+•	All relational operators return Boolean (true or false)
+Greater than >
+Greater than or equal >=
+Less than <
+Less than or equal <=
+Equal ==
+Not equal !=
+
+/= is used for assigning values to a variable, == is used for comparing two variables, but it ignores the datatype of variable whereas === is used for comparing two variables, but this operator also checks datatype and compares two values.
+= is called as assignment operator, == is called as comparison operator whereas It is also called as comparison operator.
+= does not return true or false, == Return true only if the two operands are equal while === returns true only if both values and data types are the same for the two variables.B56
+
+Logical Operators
+•	All logical operators return Boolean (true or false)
+&& Logical AND
+|| Logical OR
+! Logical NOT
+
+& and &&
+& and | provide the same outcome as the && and || operators. The difference is that they always evaluate both sides of the expression where as && and || stop evaluating if the first condition is enough to determine the outcome.
+
+// first compiler looks first expression and if the first expression is false and at the same time if there is "&" symbol compiler will look rest of the expression but if there double& "&&" compiler re not going to look at the rest of the expression
+When if statement runs, the expression (1 == ++x) will be executed, even though the left operand is false. Hence the value will be printed out for x will be 1 because it got incremented.
