@@ -1,0 +1,24 @@
+o  	Provides the methods to get inputs
+o  	Presented in java.util package    // java package contains libraries and classes that we can use
+o  	// .util  presents if there is a sub-package
+o  	Need to be imported in our program
+o  	Import.java.until.Scanner; between package and class name you should write this
+o	  Must be instantiated before it can be used.
+o  	The parameter System.in passed to the Scanner’s constructor to connect the scanner to the keyboard
+Scanner keyboard = new Scanner (System.in);
+Method Name Description
+
+•	nextByte() Returns input as a byte
+•	nextShort() Returns input as a short
+•	nextInt() Returns input as an int
+•	nextLong() Returns input as a long
+•	nextFloat() Returns input as a float
+•	nextDouble() Returns input as a double
+•	nextBoolean() Returns input as a boolean
+•	next() Returns input as a String, reads the input only until a space
+•	nextLine() Returns input as a String, reads the entire input until the new line (press enter)
+It will provide what kind of input you want.
+
+// if you use nextline method it won't be described in the scanner. this is the only disadvantage of nexLine. in all other methods enter key left in the scanner. however nextline doesn't ignore enter key.
+//if you use nexline method after another method, nextline method will be going to read the previous enter key as a default, that is why we need to clear out of scanner memory with input.nextLine();
+input.nextLine();
