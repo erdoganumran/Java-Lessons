@@ -1,0 +1,49 @@
+Features of Wrapper class
+• Wrapper classes convert numeric strings into numeric values.
+• They provide a way to store primitive data into the object.
+• Provide the mechanism to convert primitive into object and object into primitive• Dedicated classes of eight primitives
+• Presented in “java.lang” package so it will be imported implicitly.
+Autoboxing vs unboxing
+• Autoboxing converts primitive into wrapper class object
+int num1=200;
+Integer n1=num1;//autoboxing
+int num2=n1;//unboxing
+-----------
+int x = 50;  
+Integer y = Integer.valueOf(x);
+• Unboxing converts wrapper class object into primitive
+Integer x = new Integer(15);       
+int y = x.intValue();
+----
+Integer integerValue= 100;
+long longValue= integerValue; // if it is in the range it will accept another primitives in just unboxing if you convert a wrapper class to a primitive
+Wrapper Classes
+Boolean, Byte, Character, Double, Float, Integer, Long,Short
+
+parseInt() / parseDouble: returns a primitives (int/double) from a string. so we assing non-prim to prim. it's not unboxing or autoboxing
+String str="123";
+int num=Integer.parseInt(str);//123
+Integer.parseInt(""+each);
+MAX_VALUE:shows the max and min numbers in java.
+MIN_VALUE:
+int max=Integer.MAX_VALUE;
+nt min=Integer.MIN_VALUE;
+parseBoolean():if s1 is anything other than true, it will give me false
+String s1="true";
+boolean r1=Boolean.parseBoolean(s1); //
+The valueOf() returns an wrapper class from a string. not avaliable in Character.
+        String s2="123";         int num3= Integer.valueOf(s2);//123
+        String s3="120.5";      Double d4= Double.valueOf(s3);//Double is a class.120.5
+typeValue();All wrapper classes have typeValue() method. This method returns the value of the object as its primitive type.
+isDigit(): to determine whether the character is digit.returns boolean.
+isLower(): to determine whether the character is lower case alphabet.returns boolean.
+isLetter(): to determine whether the character is an alphabet.returns boolean.
+isLetterOrDigit(): to determine if the character is letter or digit. returns boolean.
+isUpperCase():returns boolean.
+isLowerCase():returns boolean.
+        char c1='0';
+        boolean r2=Character.isDigit(c1);//true
+        boolean r4= !Character.isLetterOrDigit(c1);//false
+        boolean r6=Character.isLowerCase(c1);//false
+        
+        Integer[]numbers2={1,2,3,4,5};
