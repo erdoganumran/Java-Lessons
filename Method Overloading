@@ -1,0 +1,32 @@
+• Allows us to have more than one method with the same name
+• Parameters must be different (either the data type or the number of parameters)
+• Improves the code readability and re-usability
+• It’s easier to remember one method name instead of remembering multiple method names
+• Parameters of the overloaded must be different
+• Return Type of the overloaded method can be same or different
+• Method can be overloaded any number of times
+• Any method can be overloaded Multiple different methods sharing the same method name
+• return type, access modifiers and specifiers can be same or can be different
+
+public static int sumOfNumbers(int a, int b){}
+public static int sumOfNumbers(int a, int b,int c){}
+//they all have same method name but they are different methods
+
+public static int minNumber(int[] numbers)
+public static double minNumber(double[] numbers)
+//they have same method name but they are different return type
+
+int[] result = {};==> is a temporary array
+        for (int i : arr1) {
+            result = ArraysUtility.addElement(result, i);
+        }==>every iteration int i will be added with new add element method to the temporary result[] starting from 0.
+
+    public static int[] addElement(int[] array, int a) {
+        int[] arr1 = new int[array.length + 1];
+        int i = 0;
+        for (int each : array) {
+            arr1[i++] = each;
+        }
+        arr1[i] = a;
+        return arr1;
+    }
