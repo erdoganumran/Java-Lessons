@@ -1,0 +1,100 @@
+• Abstraction means we focus on the essential qualities of something rather than one specific example
+• Focus on the essential
+• Ignore the irrelevant
+• Ignore the unimportant
+• In Java, abstraction is achieved by abstract classes and interfaces. We can achieve 100% abstraction using interfaces.
+Abstract Classes
+• abstract keyword is used to create abstract classes
+• An abstract class can not be instantiated
+• Goal is to provide reusable variables and methods to sub classes
+public abstract class Person{}
+• for example, you can make you utility classes abstract because you don't need to create object from this classes
+Creating Abstract Methods
+• abstract keyword is used to create abstract method
+• Abstract method does not have body, only have signature
+• Abstract class can both have instance and abstract methods
+But a normal class can not have abstact class
+• We can add constructors to an abstract class but you have to call it by super keyword in child class if parent has an argument. For deafult you don't have to override it.
+public abstract class Person{
+public void abstract Employee();
+}
+Creating Concrete Class
+• A sub class of abstract class is called concrete class
+• A first concrete class must implement all inherited abstract methods
+public class Student extends Person{
+@override
+public void Employee(){}
+}
+Extending Another Abstract Class
+• An abstract class can extend another abstract class. If so it is optional to
+implement abstract methods from abstract super class.
+• A first concrete class must implement all inherited abstract methods.
+Abstract Class Rules Review
+• Abstract classes can not be instantiated directly
+• Abstract classes may be defined with any number, including zero, of abstract and non-abstract methods
+• Abstract classes may not be marked as private or final
+• An abstract class that extends another abstract class inherits all of its abstract methods as its own abstract methods
+• The first concrete class that extends an abstract class must provide an implementation for all of the inherited abstract methods.
+Abstract Method Rules Review
+• Abstract methods may only be defined in abstract classes
+• Abstract methods may not be declared private or final
+• Abstract methods must not provide a method body/implementation in
+the abstract class for which it is declared
+• Implementing an abstract method in a subclass follows the same rules
+for overriding a method
+
+Interface
+• Contract between a class and outside world
+• Provide set of abstract methods
+• Most interfaces have a group of related empty methods
+• The class provides the behaviors included in the interface
+Creating an Interface
+• An interface looks similar to a class, except the keyword interface is used instead of the keyword class.
+• Methods that are specified in an interface have no bodies.
+public interface Teachable{
+public abstract void canLean(); or void canLean();--> these are same
+public abstract void doHomeWork();
+}
+• When you want a class to implement an interface, you use the implements keyword.
+public class Student implements Teachable{}
+Implementing Multiple Interfaces
+• Class can extend only one superclass, but java allows a class to implement multiple interfaces.
+• When a class implements multiple interfaces, it must provide the methods specified by all of them
+public class Name implements Interface1, Interface2, Interface3{}
+Fields in Interface
+• An interface can contain field declarations, but all fields in an interface are treated as final and static.
+boolean isHasBateries=false;//it is public static final
+Implementing Interface
+• A class can extends another class and implements interface(s) same time.
+• If a class both extend a class and implement an interface, extends should come first then implements keyword.
+Default and Static Methods
+• Beginning in Java 8, interfaces can have default and static methods.
+• Default method is an interface method that has a body.
+    public static void B(){//you don't have to override static and default method, because they have implemantation they have body. you have to do it in abstract methods
+        //body/implementation
+        //static is hiding
+    }
+Interfaces can have:Constant variables(final, static), Abstract methods, Default Methods, Static Methods. Can only have public access modifier.
+Interfaces can not have:Constructor, Blocks, Instance variables or methods
+
+
+public interface VoiceCallable{
+    boolean CAN_CALL=true;//because this is final in interface. public static final boolean CAN_CALL=true;
+    //abstract methid
+    void call(String contact);
+    //static method
+    static void decline(){
+        System.out.println(""Call is declined"");
+    }
+    //default method
+    public default void accept(){
+        System.out.println(""Call is accepted"");
+    }
+}
+
+Abstract classes and interfaces are abstract concepts and we cannot instantiate them.
+Interfaces are contracts and should only have method declarations.
+Abstract classes are partially-implemented classes.
+We use them to share some common code across their derivates.
+The new features in Java allow writing code and logic in interfaces but this is a bad practice and should be avoided.
+
