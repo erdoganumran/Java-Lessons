@@ -1,0 +1,10 @@
+Data Structure in java is defined as the collection of data pieces that offers an effective means of storing and organising data in a computer. Linked List, Stack, Queue, and arrays are a few examples of java data structures.
+• Array, Map, Collection
+• Array is the only data structure support primitives and non primitives
+• if we need to use in other 2 data structure we need to use wrapper class, we need covert primitive data type to object and we can use this data in our other data structure
+
+There are two types of Data Structures:
+
+Primitive Data Structures: byte, short,  int, float, char, boolean, long, and double are primitive Data types.
+Non-primitive Data Structures: Linear Data Structures
+                                                      Non-linear Data Structures
