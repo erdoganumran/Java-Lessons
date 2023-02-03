@@ -1,0 +1,12 @@
+• Method can return a value by using a return statement
+• Return type of the method can not be void, need to be a data type
+
+return method: return type is not void. we can use it for returning a value from return methods. MUST return a value.
+used for exiting the method.
+return anyData;
+
+branching statements:
+	continue; skiping the current iteration
+	break; exits the loop or switch
+	return anyData; exiting the method (one method, current method)
+	System.exit(0); exits the system (EVERY THING WILL BE TERMINATED)
