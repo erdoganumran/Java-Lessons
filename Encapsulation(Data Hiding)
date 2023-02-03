@@ -1,0 +1,88 @@
+Encapsulation (Data Hiding)
+• An object hides its internal data from code that’s outside the class
+• Only the current class’ methods can directly access and make changes to the instance variables
+• Hide an instance variable by giving private access modifier, and making the methods that access those fields public
+• These public methods are called getters & setters (accessor and mutator)
+Private & Public Access modifiers
+private-When the private access modifier is applied to a class member,
+the member can not be accessed by code outside the class.
+public- When the public access modifier is applied to a class member, the
+member can be accessed by code inside the class or outside.
+Getters & Setters
+• Both are public instance methods, used to protect our data and make our
+code more secure
+• Getter is used for reading the private data (instance variable) only
+• Setter is used for writing (modifying) the private data (instance variable) only
+
+Getters Method
+• An instance return method that returns the private instance variable
+• Does not pass any parameter
+• Return type must match with the data type of the private instance variable
+private double radius;
+    public double setRadius() {
+        if(radius<=0){
+            System.out.println(""Radius can not be zero or smaller than zero."");
+            System.exit(0);
+        }
+        return radius;
+    }
+public void getRadius(double radius) {
+        this.radius = radius;
+    }
+Setter Method
+• An instance method with the return type of void
+• Passes a parameter, and parameter will be assigned to the private instance variable
+• Data type of the parameter must match with the data type of the private instance variable
+Encapsulation Example
+• Attributes of Person class objects can only be accessed or modified by getters and setters
+
+1.Instance and static variables
+private double radius;
+public static double pi;
+public static double calcArea;
+public static double calcPerimeter;
+2.Static block
+    static {
+        pi=3.14;
+    }
+3.Getter and setter
+   public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {-->I set age to a new value, that is why we have argument 
+        if(radius<=0){
+            System.err.println(""Radius can not be zero or smaller than zero."");
+            System.exit(0);
+        }
+        this.radius = radius;
+    }-->//it doesnt return any value, it is just set the value, that is why is void.
+4.Constructor
+  public Circle(double radius) {
+        setRadius(radius);
+    }
+5.Methods
+    public double calcPerimeter(){
+       calcPerimeter= pi*radius*2;
+        return calcPerimeter;
+    }
+6.toString
+
+Encapsulation: hiding the fileds by giving private access modifiers
+				
+			  use getter/setter to read/write the private data
+
+
+			  Getter (Read Only): public instance method 
+			  					  Return type is not void
+			  					  Return type must match with private instance variable' data type
+			  					  Does not pass any parameter
+			  					  Returns the private instance variables value
+
+			  Setter (Write Only): public instance method 
+			  					   Return type is void
+			  					   Passes a parameter
+			  					   Parameter' data type must match with private instance variable' data type
+			  					   reassigns the private instance variable to given argument
+
+
