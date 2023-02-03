@@ -1,0 +1,55 @@
+Access Modifiers: define the accessibility
+• Variables, Constructors and methods can have all four access modifiers
+• There are 4 access modifiers available in Java:
+• public: ALWAYS rechable
+• protected: 
+• The protected access modifier is specified using the keyword protected.
+• The methods or data members declared as protected are accessible
+within same package or sub classes in different package.
+like public in a package.
+• default: 
+When no access modifier is specified for a class, method or data
+member – it is said to be having the default access modifier by default.
+The data members, class or methods which are not declared using any
+access modifiers are accessible only within the same package.ONLY reachable within the same package. public in package, private outside the package.
+• private: 
+• The private access modifier is specified using the keyword private.
+• The methods or data members declared as private are accessible only
+within the class in which they are declared.
+• Any other class of same package will not be able to access these
+members.
+• Top level classes can not be declared as private.
+ONLY reachable within the same class
+• A top level java class can have two access modifiers: public and default
+• Variables, Constructors and methods can have all four access modifiers
+• Private members can nit be inherited by child classes
+
+Final Keyword
+• final is a non-access modifier which is applicable to a variable, method,
+and class.
+Final variables-->to create constant variables
+When instance variable is final, we need to initialize it in:
+• same statement
+• constructor
+• init block
+final arrays
+• If array is declared as final, elements of array can be changed without
+any problem
+• Arrays are objects and object variables are always references in Java.
+When we declare an object variable as final, it means that the variable
+can not be changed to refer to anything else.
+final arrayList
+• Follows same rules of arrays
+• We can remove or update any values
+• We can not re-assign it to another object using new keyword
+final methods--> 
+• When a method is declared with final keyword, it is called final method.
+• A final method can not be overridden.
+• prevent from overriding  like String class. it is immutable.
+final classes--> 
+• When a class is declared with final keyword, it is called a final class. A
+final class cannot be extended(inherited).
+• You can not make a class immutable without making it final.(String
+class)
+• it is also for preventclass from inheritence.
+
