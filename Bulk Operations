@@ -1,0 +1,19 @@
+Bulk Operations: Argument MUST be a collection type
+Bulk operations can be appliable for any collection type, not only array list.
+Arrays:
+asList(array of values) ===> returns the array to a collectionType
+addAll(CollectionType): adds collection of values to the arrayList
+namesList.addAll(Arrays.asList(names));
+removeAll(CollectionType): removes all the matching elements from the arraylist
+list.removeAll(Arrays.asList(3,4,5));
+list.removeAll( Arrays.asList(0)  );--> will remove all zeros
+retainAll(CollectionType): removes all the non-matching elements from the arraylist
+names.retainAll(Arrays.asList("Ahmet", "David"));
+containsAll(CollectionType): checks if all the elements are contained in the arraylist
+boolean r2= nums.containsAll(Arrays.asList(2,5,20));
+
+Remove functions:
+remove(): when we remove one element. DO NOT use it in the loop
+removeAll(): when we remove multiple elements ( if the elements that we want to remove are known)
+retainAll(): when we want to retain multiple elements (if the elements that we want to retain are known)
+removeIf(): when we remove under a condition (if the elements we want to remove are unknown)
